@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">HostFamily</string>
+    <string name="login_name">登录</string>
+    <string name="regist_name">注册</string>
+    <string name="login_edit_name_hint">请输入手机号/海尔账号</string>
+    <string name="login_edit_pass_hint">请输入密码</string>
+    <string name="forget_pass">忘记密码</string>
+    <string name="rxjava">rxjava</string>
+    <string name="creat_observable">创建一个简单observable</string>
+    <string name="observable_from">observable_from</string>
+    <string name="ob_just">ob_just</string>
+    <string name="publish_subject">publish_subject</string>
+    <string name="zip">合并新值</string>
+</resources>
