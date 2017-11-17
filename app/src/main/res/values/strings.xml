@@ -11,4 +11,8 @@
     <string name="ob_just">ob_just</string>
     <string name="publish_subject">publish_subject</string>
     <string name="zip">合并新值</string>
+    <string name="obs_map">obs_map</string>
+    <string name="map">这是一个简单的关于map的demo</string>
+
+    <string name="text">有朋自远方来，不亦说乎；天行健，君子以自强不息。有朋自远方来，不亦说乎；</string>
 </resources>

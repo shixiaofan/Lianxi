@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import comr.example.administrator.hostfamily.R;
-import comr.example.administrator.hostfamily.Rxjava;
+import comr.example.administrator.hostfamily.rxjava.Rxjava;
 
 public class Home_page extends AppCompatActivity implements View.OnClickListener{
 

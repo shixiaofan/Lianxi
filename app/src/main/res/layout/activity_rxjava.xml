@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="comr.example.administrator.hostfamily.Rxjava">
+    tools:context="comr.example.administrator.hostfamily.rxjava.Rxjava">
     <Button
         android:id="@+id/creat_observable"
         android:layout_width="wrap_content"
@@ -28,10 +28,10 @@
         android:layout_height="wrap_content"
         android:text="@string/publish_subject"/>
     <Button
-        android:id="@+id/zip"
+        android:id="@+id/obs_map"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/zip"/>
+        android:text="@string/obs_map"/>
 
 
 

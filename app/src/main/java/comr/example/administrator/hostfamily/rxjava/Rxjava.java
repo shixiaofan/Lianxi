@@ -1,14 +1,14 @@
-package comr.example.administrator.hostfamily;
-
+package comr.example.administrator.hostfamily.rxjava;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-
 import java.util.ArrayList;
 import java.util.List;
 
+import comr.example.administrator.hostfamily.R;
 import rx.Observable;
 import rx.Observer;
 import rx.Subscriber;
@@ -16,19 +16,16 @@ import rx.Subscription;
 import rx.functions.Action0;
 import rx.subjects.PublishSubject;
 public class Rxjava extends AppCompatActivity implements View.OnClickListener{
-
     private Button creat_observable;
     private Button observable_from;
     private Button obs_just;
     private Button publish_subject;
     private Button obs_distinct;
-    private Button zip;
-
+    private Button obs_map;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rxjava);
-
         initView();
     }
 
@@ -37,12 +34,12 @@ public class Rxjava extends AppCompatActivity implements View.OnClickListener{
         observable_from = (Button) findViewById(R.id.observable_from);
         obs_just = (Button)findViewById(R.id.obs_just);
         publish_subject = (Button)findViewById(R.id.publish_subject);
-        zip = (Button)findViewById(R.id.zip);
+        obs_map = (Button)findViewById(R.id.obs_map);
         creat_observable.setOnClickListener(this);
         observable_from.setOnClickListener(this);
         obs_just.setOnClickListener(this);
         publish_subject.setOnClickListener(this);
-        zip.setOnClickListener(this);
+        obs_map.setOnClickListener(this);
     }
 
     @Override
@@ -60,23 +57,14 @@ public class Rxjava extends AppCompatActivity implements View.OnClickListener{
             case R.id.publish_subject:
                 publish_subject();
                 break;
-            case R.id.zip:
-                zip();
+            case R.id.obs_map:
+                obs_map();
                 break;
         }
     }
 
-    private void zip() {
-        List<String> mstring=new ArrayList<>();
-        List<Integer> mint=new ArrayList<>();
-        mstring.add("星期一");
-        mstring.add("星期二");
-        mstring.add("星期三");
-        mint.add(111);
-        mint.add(222);
-        mint.add(333);
-        Observable<String> mobs_str=Observable.from(mstring);
-        Observable<Integer>mobs_int=Observable.from(mint);
+    private void obs_map() {
+        startActivity(new Intent(this,Observable_Map.class));
     }
 
 
