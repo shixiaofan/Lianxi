@@ -15,4 +15,7 @@
     <string name="map">这是一个简单的关于map的demo</string>
 
     <string name="text">有朋自远方来，不亦说乎；天行健，君子以自强不息。有朋自远方来，不亦说乎；</string>
+    <string name="smallDemo">小项目</string>
+    <string name="guaguale">刮刮乐</string>
+    <string name="threeD_car">3D汽车模型</string>
 </resources>
